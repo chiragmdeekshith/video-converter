@@ -154,8 +154,8 @@ def main():
     env.set_stream_time_characteristic(TimeCharacteristic.EventTime)
     env.set_parallelism(1)  # You can adjust the parallelism based on your requirements
 
-    video_in_path = "/Users/amansahu/COMP 6231/projectowrks/sample.mp4"
-    video_out_path = "/Users/amansahu/COMP 6231/projectowrks/out.mp4"
+    video_in_path = "/path/to/input/file/sample.mp4"
+    video_out_path = "/path/to/putput/file/out.mp4"
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
     fps = 30
 
