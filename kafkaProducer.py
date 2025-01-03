@@ -39,6 +39,6 @@ producer = KafkaProducer(bootstrap_servers=['localhost:9092'],
                          value_serializer=custom_byte_serializer)
 
 if __name__ == '__main__':
-    video_in_path = "/Users/amansahu/COMP 6231/projectowrks/sample.mp4"
+    video_in_path = "/path/to/file/sample.mp4"
     source = VideoSource(video_in_path)
     source.run(producer, "my-topic")
